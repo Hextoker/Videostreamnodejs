@@ -1,6 +1,6 @@
 {
-  "name": "video-stream-sample",
-  "version": "1.0.0",
+  "name": "proyect-video-stream",
+  "version": "1.1.0",
   "description": "Streaming video example",
   "main": "server.js",
   "engines": {
@@ -12,7 +12,17 @@
   "author": "daspinola",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.15.3",
     "nodemon": "^1.11.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hextoker/Videostreamnodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hextoker/Videostreamnodejs/issues"
+  },
+  "homepage": "https://github.com/Hextoker/Videostreamnodejs#readme"
 }

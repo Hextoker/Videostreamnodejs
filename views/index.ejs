@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pelis Drive</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-white">Reproductor de Videos</h1>
+            <hr>
+            <div class="row">
+              <div class="col-8">
+                <div class="card bg-dark text-white">
+                  <img src="https://cdn.tn.com.ar/sites/default/files/styles/1366x765/public/2014/08/14/halconesg.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h4 class="card-title"><%= assets.name %></h4>
+                    <p class="card-text"><%= assets.description %></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+
+                <ul class="list-group">
+                  <li class="list-group-item active"><h4 class="text-white">Listado de Episodios</h4></li>
+                  <% assets.files.forEach(function(asset) { %>
+                    <li class="list-group-item"><a href="video?name=<%= asset.file %>"><%= asset.name %></a></li>
+                    <% }) %>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
